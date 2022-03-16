@@ -10,6 +10,7 @@ html {
   font-family:  Helvetica,Arial, sans-serif;
   color: black;
   padding: 24px 24px 0px;
+  scroll-behavior:  smooth;
 }
 
 body{
@@ -135,4 +136,42 @@ a:focus {
 a:visited,
 a:active {
   color: blueviolet;
+}
+
+/*
+    Media Queries
+    ---
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    Modify as content requires.
+*/
+
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  html{
+    padding: 48px 48px 0 48px;
+  }
+  h1{
+    font-size: 58px;
+    line-height: 64px;
+}
+}
+/* Large devices (landscape tablets, desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
