@@ -10,7 +10,15 @@ html {
   font-family:  Helvetica,Arial, sans-serif;
   color: black;
   padding: 24px 24px 0px;
+}
 
+body{
+  max-width: 42em; /*em waarde verwijst naar de base-unit van de HTML: font-size bv*/
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
 }
 
 /*
@@ -20,10 +28,111 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-
+::-moz-selection { /*browser prefix extensie: als je stukje teskt gaat selecteren*/
+  color: white;
+  background-color: #44C8F5;
 }
 
 ::selection {
+    color: white;
+  background-color: #44C8F5;
+}
 
+/*
+    Elements: typography
+    ---
+    Default markup for typographic elements
+*/
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 0 0 48px;
+}
+
+h2 {
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
+
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px;
+
+}
+
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 24px;
+}
+
+p,
+ol,
+ul,
+dl,
+table,
+address,
+figure {
+  margin: 0 0 24px;
+
+}
+
+ul,
+ol,
+blockquote {
+  padding-left: 24px;
+
+}
+
+li ul,
+li ol{
+  margin-bottom: 0px;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+figcaption {
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 8px;
+  color: gray;
+
+}
+
+hr {
+  border:  0;
+  height: 1px;
+  border-color: lightgray;
+  margin: 0 0 24px;
+}
+
+a {
+  color: royalblue;
+  transition: all 0.1s ease-in-out; 
+}
+
+a:hover, /*loVe before Hate*/
+a:focus {
+  color: crimson;
+  /* font-size: 2em;  */
+}
+
+a:visited,
+a:active {
+  color: blueviolet;
 }
